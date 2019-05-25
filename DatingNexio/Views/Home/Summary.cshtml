@@ -1,0 +1,25 @@
+﻿@model DatingNexio.Models.Pair
+
+@{
+    ViewBag.Title = "Wynik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Wynik</h2>
+<h3>@Model.Woman.Name</h3>
+i
+<h3>@Model.Man.Name</h3>
+
+@if (Model.IsMatch())
+{
+    @:pasują
+}
+else
+{
+    @:nie pasują
+}
+<h3> do siebie</h3>
+
+<p>
+    @Html.ActionLink("Powrót do testu", "Index")
+</p>
